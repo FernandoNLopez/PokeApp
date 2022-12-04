@@ -1,0 +1,13 @@
+@use './variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,500;1,700&display=swap');
+    font-family: 'Kanit', sans-serif;
+    background-color: variables.$green;
+}

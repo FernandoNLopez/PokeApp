@@ -1,0 +1,46 @@
+@use 'variables'; 
+
+.card {
+    border: 1px solid red;
+    width: 200px;
+    height: 250px;
+    padding: 48px 12px 12px;
+    position: relative;
+
+    border-radius: 16px;
+    background-color: variables.$blue;
+    box-shadow: 3px 3px 10px;
+    cursor: pointer;
+    overflow: hidden;
+
+    &__name {
+        width: 140px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 6px 12px;
+
+        background-color: variables.$rose;
+        text-align: center;
+        color: variables.$fullwhite;
+    }
+
+    &__circle {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: 56px;
+        left: 24px;
+
+        background-color: variables.$yellow;
+        border-radius: 50%;
+        
+    }
+
+    &__img {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+
+    }
+}
